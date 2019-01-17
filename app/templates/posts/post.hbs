@@ -1,0 +1,15 @@
+
+<div class="container">
+
+{{#if editMode}}
+
+	{{post-edit post=model save='save' cancel='cancel'}}
+
+{{else}}
+
+	{{post-view post=model edit='edit' delete='delete'}}
+
+{{/if}}
+
+</div>
+

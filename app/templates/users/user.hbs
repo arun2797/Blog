@@ -1,0 +1,25 @@
+<div class="container">
+
+<h2>USER:</h2>
+<ul>
+  	<li>USER ID: {{this.model.current.id}}</li>
+    <li>EMAIL:   {{this.model.current.email}}</li>
+</ul>
+
+<hr style="height:1px;border:none;color:#333;background-color:#333;">
+
+	<h1>CREATE POSTS </h1>
+	<h3>TITLE: {{input value = title}}<br></h3><hr>
+	<h3>BODY: {{input value = body}}<br></h3><hr>
+	<h3>BY USER: {{this.model.current.id}} -- {{this.model.current.email}}<br></h3><hr>
+	<button {{action "createPost" model=model }}>Create</button>
+
+<hr style="height:1px;border:none;color:#333;background-color:#333;">
+
+<h2>POSTS:</h2>
+{{all-posts model=this.model.posts}}<hr>
+
+
+</div>
+
+{{outlet}}

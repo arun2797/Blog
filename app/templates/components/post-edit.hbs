@@ -1,0 +1,15 @@
+
+<div class="container">
+
+	<h1><b> TITLE: {{input value = post.title}}<br>  </b></h1><hr>
+
+	<h2>BODY: {{input value = post.body}}<br></h2><hr>
+
+	<h2>BY USER:{{post.user_id}}<br></h2><hr>
+
+	<button {{action 'save'}}>SAVE</button>
+	<button {{action 'cancel'}}>CANCEL</button>
+
+</div>
+
+{{yield}}

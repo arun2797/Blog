@@ -1,0 +1,10 @@
+<div class="container">
+
+
+{{#each model as |post|}}
+  <br><a href='/posts/{{post.id}}'>{{post.title}} &emsp;&emsp; BY USER: {{post.user_id}}</a><br>
+{{/each}}
+
+</div>
+
+{{yield}}

@@ -1,0 +1,14 @@
+<div class="container">
+
+<h1><b> TITLE:<br> {{post.title}}<br>  </b></h1><hr>
+
+<h2>BODY:<br> {{post.body}}<br></h2><hr>
+
+<h2>BY USER:{{post.user_id}}<br></h2><hr>
+
+<button {{action 'edit'}}>EDIT</button>
+<button {{action 'delete'}}>DELETE</button>
+
+</div>
+
+{{yield}}
