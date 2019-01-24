@@ -7,7 +7,7 @@ export default Controller.extend({
 		createPost: function(){
 			var title = this.get('title');
 			var body = this.get('body');
-			var id = this.model.current.id
+			var id = this.model.id;
 
 			var newPost = this.store.createRecord('post', {
 				title: title,
